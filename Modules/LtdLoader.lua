@@ -1,7 +1,7 @@
 -- This module is used for registering and creating instances of classes.
 -- This module was copied from QuestieLoader.lua, a module in Questie.
 
--- The only public class except for Questie
+-- The only public class except for LanguageTranslationDictionary
 ---@class LtdLoader
 LtdLoader = {}
 

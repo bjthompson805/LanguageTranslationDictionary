@@ -9,9 +9,7 @@
 ## Title: Language Translation Dictionary
 ## Notes: A bilingual dictionary addon.
 
-LanguageTranslationDictionary.lua
-LanguageTranslationDictionary.toc
-README.md
-
 Modules/LtdLoader.lua
-Dictionaries/es-en.data
+Modules/LtdDictionary.lua
+LanguageTranslationDictionary.lua
+LanguageTranslationDictionary.xml
