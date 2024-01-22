@@ -1,0 +1,17 @@
+## Interface: 30403
+## Author: bjthompson805
+## Version: @project-version@
+## SavedVariables:
+## OptionalDeps:
+## DefaultState: Enabled
+## LoadOnDemand: 0
+
+## Title: Language Translation Dictionary
+## Notes: A bilingual dictionary addon.
+
+LanguageTranslationDictionary.lua
+LanguageTranslationDictionary.toc
+README.md
+
+Modules/LtdLoader.lua
+Dictionaries/es-en.data
