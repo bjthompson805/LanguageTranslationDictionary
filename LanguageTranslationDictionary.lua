@@ -5,5 +5,3 @@ function LanguageTranslationDictionary:Init()
     local LtdDictionary = LtdLoader:ImportModule("LtdDictionary")
     LtdDictionary:load("spanish")
 end
-
-LanguageTranslationDictionary:Init()

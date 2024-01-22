@@ -1,5 +1,6 @@
 <Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
-	<Script file="LanguageTranslationDictionary.lua"></Script>
+	<Script file="LanguageTranslationDictionary.lua" />
+    <SimpleHTML name="EsEnDictionary" file="Interface\AddOns\LanguageTranslationDictionary\Dictionaries\es-en.html" virtual="true" />
     <Frame name="LtdFrame" toplevel="true" parent="UIParent" movable="true" resizable="true" enableMouse="true" hidden="false" setAllPoints="true" inherits="BackdropTemplate">
         <Size x="832" y="447" />
         <Anchors>
@@ -53,19 +54,18 @@
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="$parentSearchLabel" relativePoint="BOTTOMLEFT" x="10" y="0" />
                 </Anchors>
-				<Scripts>
-					<OnLoad>
-						self:SetAutoFocus(false);
-					</OnLoad>
-					<OnEnterPressed>
-						Altoholic.Tabs:OnClick("Search")
-						Altoholic.Search:FindItem();
-						self:ClearFocus();
-					</OnEnterPressed>
-					<OnEscapePressed>
-						Altoholic:ToggleUI()
-					</OnEscapePressed>
-				</Scripts>
+                <Scripts>
+                    <OnLoad>
+                        self:SetAutoFocus(false);
+                    </OnLoad>
+                    <OnEnterPressed>
+                        LanguageTranslationDictionary:Init();
+                        self:ClearFocus();
+                    </OnEnterPressed>
+                    <OnEscapePressed>
+                        Altoholic:ToggleUI()
+                    </OnEscapePressed>
+                </Scripts>
             </EditBox>
             <Button name="$parentSearchButton" inherits="UIPanelButtonTemplate" text="SEARCH">
                 <Size x="80" y="24" />
